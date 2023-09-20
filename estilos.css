@@ -146,19 +146,20 @@ hr {
 .container-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-    margin-left: 100px; 
+    margin-left: 120px; 
 }
 
-.img1 {
+.borde-colorido {
     border: 6px solid #FFF973;
+    margin-bottom: 20px;
 }
 
 .recuadro {
     border: 6px solid #FCB900;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-bottom: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
     padding: 10px;
 }
 
