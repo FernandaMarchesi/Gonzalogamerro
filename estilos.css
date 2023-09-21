@@ -81,13 +81,39 @@ hr {
 }
 
 /*inicio*/
-.titulo-img-container {
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(img/descarga.jpg);
+        url(img/descarga\ \(1\).jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/*
 @media only screen and (max-width: 480px) {
     .titulo-img-container {
         background-image: 50px 25px;
@@ -109,7 +135,7 @@ hr {
         height: 514px;
     }
 }
-
+*/
 /*sobre mí*/
 .contenedor-sobremi {
     width: 100%;
