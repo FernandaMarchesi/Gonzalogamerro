@@ -32,6 +32,12 @@ h2 {
     color: #FFF973;
 }
 
+h3 {
+    font-family: Verdana;
+    color: black;
+    font-weight: bold;
+}
+
 p {
     font-family: verdana;
     font-weight: bold;
@@ -212,6 +218,48 @@ hr {
     color: #FFF973;
     text-decoration: underline;
 }
+
+/*agendar videollamada*/
+.container {
+    display: flex;
+    background-image: linear-gradient(to right, #FCB900, #fff973);
+    height: 500px;
+    width: 1000px;
+    box-shadow: 0 0 20px black 0.4;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.container p {
+    color: black;
+}
+
+.imagen {
+    float: right; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* boton subir */
 .subir {
