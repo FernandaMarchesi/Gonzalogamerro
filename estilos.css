@@ -17,17 +17,15 @@ html {
 /*fuentes*/
 h1 {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 38px;
-    padding: 15px;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 32px;
     color: #FCB900;
 }
 
 h2 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 28px;
     font-family: Verdana;
     color: #FFF973;
 }
@@ -36,6 +34,24 @@ h3 {
     font-family: Verdana;
     color: black;
     font-weight: bold;
+}
+
+h4 {
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    background-color: #FFF973;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
 }
 
 p {
@@ -89,14 +105,27 @@ hr {
 /*inicio*/
 
 .contenedor {
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(img/pesas.png);
-    height: 585px;
-    background-position: right;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    position: relative;
 }
+
+.img-principal {
+    float: right ;
+    margin-left: 300px;
+}
+
+.texto-principal {
+    position: absolute;
+    float: left ;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-108%, -50%);
+}
+
 
 .submit {
     background-color: #FCB900;
@@ -108,7 +137,7 @@ hr {
     border-radius: 25px;
     width: 250px;
     margin-top: 25px;
-    box-shadow: 0 0 20px #FFF973;
+    box-shadow: 0 0 20px black;
 }
 
 .submit:hover {
