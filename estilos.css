@@ -92,8 +92,6 @@ hr {
     flex-direction: column;
 }
 
-
-
 .submit {
     background-color: #FCB900;
     color: black;
@@ -121,7 +119,7 @@ hr {
 .img-sobremi {
     width: 35%;
     height: 500px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     float: right;
     margin-right: 10px;
@@ -129,7 +127,7 @@ hr {
 
 .texto-sobremi {
     text-align: left;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 25px;
     margin-right: 25px;
     max-width: 100%;
@@ -163,57 +161,50 @@ hr {
     padding: 10px;
 }
 
-/*nuestros resultados*/
-.resultados {
+/*galeria de imagenes*/
+/*resultados*/
+.grid-container {
     display: grid;
-    height: 1030px;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    background-color: black;
-    grid-template-rows: repeat(3, 325px);
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7";
-    grid-gap: 10px;
-    padding: 15px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 480px) {
-    .resultados {
-        height: 1260px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 200px);
-        grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7";
-    }
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 780px) {
-    .galeria-shows {
-        height: 1260px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 200px);
-        grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7";
-    }
+/*experiencias*/
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.item {
-    border: 2px solid black;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
+.grid-item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item1 {
-    background-image: url(./img/sin-titulo-2.jpg);
-    grid-area: img1;
+/*mas imagenes*/
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.item2 {
-    background-image: url(./img/sin-titulo-1.jpg);
-    grid-area: img2;
-}
-
-.item3 {
-    background-image: url(./img/caso-de-exito1-1.jpg);
-    grid-area: img3;
+.grid-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*términos y condiciones*/
